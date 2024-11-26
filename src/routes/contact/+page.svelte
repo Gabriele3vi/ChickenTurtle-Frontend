@@ -1,0 +1,2 @@
+<h1 class="font-bold text-4xl">Contact us</h1>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt magnam nisi vel fugit unde voluptate repellat delectus dolores in? Tempora similique accusamus architecto doloremque pariatur et id eius quibusdam illum?</p>

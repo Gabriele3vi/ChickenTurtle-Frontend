@@ -1,0 +1,2 @@
+<h1 class="font-bold text-4xl">Mission</h1>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nulla quam corporis iusto! Neque nisi corporis porro perspiciatis nobis! Eligendi perspiciatis distinctio rem sequi ab. Blanditiis dolorum officia fugiat similique.</p>
