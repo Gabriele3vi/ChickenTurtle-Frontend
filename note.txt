@@ -1,0 +1,6 @@
+Grafici
+    - Evoluzione nel tempo della sentiment analysis
+    - Controversiality score
+    - percentuale dei sentimenti nei commenti
+    - Differenza tra mio grafico e quello dei concorrenti
+    - Analisi video dei concorrenti

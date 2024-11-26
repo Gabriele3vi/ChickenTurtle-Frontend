@@ -20,6 +20,6 @@
         <a href="/contact" class="btn btn-ghost text-xl">Contact</a>
     </div>
 </div>
-<div class="flex-1 bg-[#FEF3E2] p-3 h-screen">
+<div class="flex-1 bg-[#FEF3E2] p-3 h-screen overflow-y-auto">
     <slot />
 </div>
