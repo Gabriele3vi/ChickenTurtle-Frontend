@@ -50,7 +50,7 @@
             plugins: {
                 title: {
                     display: true, // Enables the title
-                    text: '% of sentiments in total', // Title text
+                    text: 'Sentiments', // Title text
                     font: {
                     size: 18 // Font size for the title
                     },
@@ -195,7 +195,7 @@
         </div>
     </div>
 
-    <h2 class="text-2xl font-bold place-self-center">Sentiment analysis of top 10 related videos</h2>
+    <h2 class="text-2xl font-bold place-self-center">Sentiment analysis of top 3 related videos</h2>
 
     {#each dataToPlot.related as relatedVideo}
     <div class="flex flex-row justify-around items-center">

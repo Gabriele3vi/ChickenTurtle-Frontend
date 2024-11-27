@@ -19,35 +19,35 @@ export function getData(){
             {
                 url: "50graHf0Wis",
                 title:"Tesla CYBERTRUCK | L’ho PROVATA!",
-                channelName: 'Channel1',
+                channelName: 'TeslaFans5554',
                 views: 1234,
                 likes: 124134,
                 comments: 145234,
                 sent: {
-                    "Neutral": 5434,
-                    "Positive": 19034,
-                    "Negative": 1000,
-                    "Sarcastic": 5000
+                    "Neutral": 1000,
+                    "Positive": 1200,
+                    "Negative": 800,
+                    "Sarcastic": 2000
                 }
             },
             {
                 url: "CQzYhMDNLPA",
                 title:"James May finally drives the Tesla...",
-                channelName: 'Channel2',
+                channelName: 'TopGearVideo',
                 views: 1234,
                 likes: 124134,
                 comments: 145234,
                 sent: {
-                    "Neutral": 5434,
-                    "Positive": 19034,
+                    "Neutral": 4532,
+                    "Positive": 2452,
                     "Negative": 1000,
-                    "Sarcastic": 5000
+                    "Sarcastic": 500
                 }
             },
             {
-                url: "DsonSEllPmU",
-                title:"Cybertruck",
-                channelName: 'Channel3',
+                url: "6YModtVZ0B4",
+                title:"IL MIO CYBERTRUCK DI TESLA!",
+                channelName: 'CarLover99',
                 views: 1234,
                 likes: 124134,
                 comments: 145234,

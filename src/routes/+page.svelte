@@ -1,22 +1,48 @@
 <script>
+    import * as api from "$lib/api"
+    import { goto } from '$app/navigation'
+    import {
+        Chart,
+        LineController, // Import the line controller
+        LineElement, // Import the line element
+        PointElement, // Import the point element (for data points)
+        LinearScale, // Import the linear scale (for the y-axis)
+        CategoryScale, // Import the category scale (for the x-axis)
+        Tooltip, // Optional: for tooltips
+        Legend // Optional: for the legend
+    } from 'chart.js';
+
+    let url_to_analyze = ""
+    let show_loading = false
+    let status = "first"
+    let data 
+    let canvas
+
+    function analyze() {
+        console.log(url_to_analyze, "Analyzed")
+        data = api.getData()
+
+        console.log(data)
+        status = "second"
+        setTimeout(() => { goto("/analysis")}, 3000)
+    }
 
 </script>
+<div class="flex items-center justify-center">
 
-
-<div class="h-full p-1.5 gap-y-1.5">
-    <div class="flex flex-col" name="info">
-        <h1 class="font-bold text-2xl">
-            What is ChickenTurtle?
-        </h1>
-        <p>Lorem, ipsum dolor sitjj amet consectetur adipisicing elit. Voluptates enim ullam inventore animi corporis aperiam blanditiis, quae quia quos laboriosam, placeat repellendus accusamus nostrum. Ipsam sint porro debitis minima asperiores?</p>
+    {#if status == "first"}
+    <div class="flex flex-col gap-y-2 items-center justify-center mt-32 w-3/4">
+        <h1 class="font-bold text-6xl">Let's start.</h1>
+        <p>Insert the link to the youtube video</p>
+        <div class="join w-3/4 mt-1.5">
+            <input class="input input-bordered join-item w-full" placeholder="Youtube URL" bind:value={url_to_analyze}/>
+            <button class="btn join-item rounded-r-full" on:click={analyze}>Analyze</button>
+          </div>
     </div>
-    <div class="flex flex-col" name="info">
-        <h1 class="font-bold text-2xl">What we can do?</h1>
-        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates enim ullam inventore animi corporis aperiam blanditiis, quae quia quos laboriosam, placeat repellendus accusamus nostrum. Ipsam sint porro debitis minima asperiores?</p>
+    {:else if status=="second"}
+    <div class="flex flex-col gap-y-2 items-center justify-center mt-32 w-3/4">
+        <h1 class="font-bold text-6xl">Analyzing the comments...</h1>
+        <span class="loading loading-spinner loading-lg"></span>
     </div>
-    <div class="flex items-center justify-center">
-        <a href="/app" class="btn font-bold text-4xl bg-[#fad69d]">Try it!</a>
-    </div>
+    {/if}
 </div>
-
-
